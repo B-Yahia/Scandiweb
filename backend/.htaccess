@@ -1,0 +1,10 @@
+# RewriteEngine on
+# RewriteRule .* /public/$0 [L]
+# DirectoryIndex index.php
+
+# RewriteEngine On
+# Redirect all traffic to public/index.php
+# RewriteRule ^(.*)$ public/index.php [QSA,L]
+
+RewriteEngine On
+RewriteRule ^(.*)$ public/index.php [QSA,L]

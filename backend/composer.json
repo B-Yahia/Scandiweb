@@ -1,0 +1,27 @@
+{
+  "name": "yahya/domain4",
+  "autoload": {
+    "psr-4": {
+      "Yahya\\Domain4\\": "src/",
+      "Config\\": "src/config",
+      "Entities\\": "src/Entities",
+      "Types\\": "src/Types",
+      "InputTypes\\": "src/InputTypes",
+      "Schema\\": "src/Schema",
+      "Service\\": "src/Service",
+      "Repository\\": "src/Repository",
+      "Controller\\": "src/Controller"
+    }
+  },
+  "authors": [
+    {
+      "name": "yahya",
+      "email": "yahiabahhous@gmail.com"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.6",
+    "webonyx/graphql-php": "^15.12",
+    "nikic/fast-route": "^1.3"
+  }
+}
