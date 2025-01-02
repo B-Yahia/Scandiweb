@@ -1,0 +1,21 @@
+.attribute_item_text {
+  width: 63px;
+  height: 45px;
+  border: solid 1px black;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.selected_attribute_item_text {
+  width: 63px;
+  height: 45px;
+  border: solid 1px white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}

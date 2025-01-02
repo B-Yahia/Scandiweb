@@ -1,0 +1,32 @@
+.attribute_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.attribute_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.attribute_item {
+  height: 36px;
+  width: 36px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.selected_attribute_item {
+  height: 36px;
+  width: 36px;
+  border-radius: 2px;
+  padding: 5px;
+  border: solid 1px blue;
+}

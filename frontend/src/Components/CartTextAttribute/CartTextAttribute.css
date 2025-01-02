@@ -1,0 +1,33 @@
+.cart_attribute_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.cart_attribute_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.cart_attribute_item_text {
+  min-width: 25px;
+  height: 25px;
+  border: solid 1px var(--primary-color);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+.selected {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+.cart_attribute_title {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}

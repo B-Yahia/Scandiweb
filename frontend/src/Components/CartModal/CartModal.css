@@ -1,0 +1,113 @@
+.modal_container {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  z-index: 2;
+  top: 70px;
+  left: 0px;
+}
+.modal_container_hiden {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  z-index: 2;
+  top: 70px;
+  left: 0px;
+  scale: 0;
+}
+.modal_overlay {
+  background-color: black;
+  opacity: 0.2;
+  height: 100%;
+  width: 100%;
+}
+.modal_content {
+  position: absolute;
+  width: 350px;
+  max-height: 630px;
+  background-color: var(--bg-color);
+  top: 0px;
+  right: 0px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+  overflow-y: scroll;
+}
+.place_order {
+  width: 100%;
+  height: 43px;
+  color: white;
+  background-color: var(--secondary-color);
+}
+.place_order:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+.cart_modal_container {
+  width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.cart_modal_title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+  gap: 20px;
+}
+.orderLine_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 180px;
+}
+
+.orederline_info_name {
+  font-weight: 300;
+  font-size: 18px;
+}
+.orederline_info_price {
+  font-weight: 400;
+  font-size: 16px;
+}
+.orederline_btns {
+  width: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.orederline_btn {
+  width: 25px;
+  height: 25px;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+.orederline_img {
+  width: 125px;
+  height: auto;
+}
+.cart_total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cart_total_price {
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.orderline_cadrs_container {
+  width: 100%;
+  min-height: 200px;
+}
