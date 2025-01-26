@@ -20,15 +20,12 @@ $conn = Setup::database();
 function writeData(Database $conn, array $list_of_products)
 {
     foreach ($list_of_products as $product) {
-
-        //get category id 
         $catgory_id = $conn->query(
             'select id from Categories where name = :name',
             [
                 'name' => $product['category']
             ]
         )->findColumn();
-
         $product_id = $conn->query("insert into Products (name ,brand,description,inStock,category_id) values (:name ,:brand,:description,:inStock,:category_id)", [
             'name' => $product['name'],
             'brand' => $product['brand'],
@@ -71,7 +68,6 @@ function writeData(Database $conn, array $list_of_products)
                         'label' => $price['currency']['label']
                     ]
                 )->find();
-                // insert images
                 $conn->query("insert into Prices (amount,currency_id,product_id) values (:amount,:currency_id,:product_id)", [
                     'amount' => $price['amount'],
                     'currency_id' => $currency_id['id'],
